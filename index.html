@@ -1,26 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="az">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
-    <title>Startap</title>
-    <style>
-        div {
-            height: 100px;
-            width: 100px;
-            background-color: lime;
-            border-radius: 50%;
-            position: fixed;
-            right: 10px;
-            bottom: 10px;
-            opacity: 0.3; 
-        }
-    </style>
+    <title>Avto-Elan | Maşın Satışı Saytı</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="home">Startap</h1>
-    <a href="#home">
-        <div></div>
-    </a>
+
+    <header>
+        <div class="logo">Avto-Elan</div>
+        <nav>
+            <a href="#elanlar">Elanlar</a>
+            <a href="#yeniler">Yenilər</a>
+            <a href="#haqqimizda">Haqqımızda</a>
+            <a href="#elaqe" class="button">Əlaqə</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Xəyalınızdakı avtomobili tapın</h1>
+        <div class="search-box">
+            <input type="text" placeholder="Marka, Model və ya Şəhər üzrə axtarış...">
+            <button>Axtar</button>
+        </div>
+    </section>
+
+    <section id="elanlar" class="car-listing">
+        <h2>Son Elanlar</h2>
+        
+        <div class="grid-container">
+            <div class="car-card">
+                <img src="car1.jpg" alt="Audi A6">
+                <div class="info">
+                    <h3>Audi A6</h3>
+                    <p class="price">45,000 AZN</p>
+                    <p class="details">2018, 2.0L, Benzin, 85,000 km</p>
+                    <a href="#" class="view-button">Bax</a>
+                </div>
+            </div>
+            
+            <div class="car-card">
+                <img src="car2.jpg" alt="Toyota Corolla">
+                <div class="info">
+                    <h3>Toyota Corolla</h3>
+                    <p class="price">22,500 AZN</p>
+                    <p class="details">2015, 1.6L, Benzin, 120,000 km</p>
+                    <a href="#" class="view-button">Bax</a>
+                </div>
+            </div>
+            
+            <div class="car-card">
+                <img src="car3.jpg" alt="Mercedes C-Class">
+                <div class="info">
+                    <h3>Mercedes C-Class</h3>
+                    <p class="price">38,000 AZN</p>
+                    <p class="details">2019, 2.0L, Dizel, 55,000 km</p>
+                    <a href="#" class="view-button">Bax</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Avto-Elan. Bütün hüquqlar qorunur.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a> | <a href="#">Instagram</a>
+        </div>
+    </footer>
+
 </body>
 </html>
