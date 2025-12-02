@@ -52,7 +52,7 @@ nav a:hover {
 }
 
 /* Hero Bölməsi (Əsas Axtarış) */
-.hero {
+.baslıq {
     background: url('hero-bg.jpg') no-repeat center center/cover; /* Şəkli dəyişdirin */
     color: white;
     text-align: center;
