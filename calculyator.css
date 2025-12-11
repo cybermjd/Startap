@@ -1,0 +1,141 @@
+/* --- 13. Kalkulyator Səhifəsi Stili (calculator.html) --- */
+.calculator-page-content {
+    display: flex;
+    flex-direction: column; /* Mobil üçün alt-alta */
+    gap: 40px;
+    padding-bottom: 60px;
+}
+
+.calculation-form-wrapper {
+    background-color: var(--color-white);
+    padding: 30px;
+    border-radius: var(--radius-default);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.carbon-calculator-form fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: var(--radius-default);
+}
+
+.carbon-calculator-form legend {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    padding: 0 10px;
+}
+
+.carbon-calculator-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.carbon-calculator-form input,
+.carbon-calculator-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.calculate-btn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* --- Nəticə Bloku Stili --- */
+.result-and-tips-wrapper {
+    padding: 30px;
+    background-color: var(--color-secondary);
+    border-radius: var(--radius-default);
+}
+
+.result-box {
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: var(--color-white);
+    border: 3px solid var(--color-primary);
+    border-radius: var(--radius-default);
+}
+
+.result-box p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.final-result {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--color-accent); /* Diqqət çəkən rəng */
+    display: block;
+}
+
+.unit {
+    font-size: 1.2rem;
+    color: var(--color-text);
+    display: block;
+}
+
+/* --- Təkliflər Kartları Stili --- */
+.tip-card-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr; /* Mobil üçün 1 sütun */
+    gap: 15px;
+}
+
+.tip-card {
+    padding: 15px;
+    border-radius: var(--radius-default);
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.tip-low {
+    background-color: #e6ffe6; /* Açıq yaşıl fon */
+    border-left: 5px solid green;
+}
+
+.tip-high {
+    background-color: #fff0e6; /* Açıq narıncı fon */
+    border-left: 5px solid orange;
+}
+
+.tip-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.tip-card h4 {
+    display: inline;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+/* --- Media Sorğu Düzəlişi (calculator.html üçün) --- */
+@media (min-width: 992px) {
+    .calculator-page-content {
+        flex-direction: row; /* Böyük ekranlarda yan-yana */
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .calculation-form-wrapper {
+        flex: 2; /* Formanın daha çox yer tutması */
+    }
+    .result-and-tips-wrapper {
+        flex: 1; /* Nəticənin daha az yer tutması */
+        position: sticky;
+        top: 20px;
+    }
+    .tip-card-container {
+        grid-template-columns: 1fr; /* Nəticə tərəfində yenə 1 sütun */
+    }
+}

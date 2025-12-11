@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karbon İzi Kalkulyatoru | Eco-Life Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">...</header>
+
+    <main>
+        <section class="page-title-section container">
+            <h1>Şəxsi Karbon İzi Kalkulyatoru</h1>
+            <p class="subtitle">Dəqiq hesablamalar aparın və yaşıl həyata başlayın.</p>
+        </section>
+
+        <section class="container calculator-page-content">
+            
+            <div class="calculation-form-wrapper">
+                <h2>1. Məlumatları Daxil Edin</h2>
+                <form class="carbon-calculator-form">
+                    
+                    <fieldset>
+                        <legend>Nəqliyyat (Transport)</legend>
+                        <label for="distance">Həftəlik avtomobil məsafəsi (km):</label>
+                        <input type="number" id="distance" name="distance" placeholder="150" required>
+                        
+                        <label for="fuel">Yanacaq növü:</label>
+                        <select id="fuel" name="fuel">
+                            <option value="petrol">Benzin</option>
+                            <option value="diesel">Dizel</option>
+                            <option value="electric">Elektrik (0 emissiya)</option>
+                        </select>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Qida (Food)</legend>
+                        <label for="meat">Həftədə ət istehlakı (dəfə):</label>
+                        <input type="number" id="meat" name="meat" placeholder="3">
+                        
+                        <label for="vegan">Vegetarian/Vegan qidalanma (gün):</label>
+                        <input type="number" id="vegan" name="vegan" placeholder="2">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Enerji (Energy)</legend>
+                        <label for="electricity">Aylıq elektrik sərfiyyatı (kWh):</label>
+                        <input type="number" id="electricity" name="electricity" placeholder="250">
+                    </fieldset>
+                    
+                    <button type="submit" class="btn btn-primary btn-large calculate-btn">
+                        Hesabla və Nəticəni Gör
+                    </button>
+                    </form>
+            </div>
+
+            <div class="result-and-tips-wrapper">
+                <h2>2. Sizin Karbon İziniz (Statik)</h2>
+                
+                <div class="result-box">
+                    <p>Təxmini İllik Karbon İzi:</p>
+                    <span class="final-result">4.2</span>
+                    <span class="unit">ton CO₂e</span>
+                </div>
+                
+                <div class="tip-card-container">
+                    <h3>Sizin üçün Təkliflər (Giki Zero nümunəsi)</h3>
+                    <div class="tip-card tip-low">
+                        <span class="tip-icon">🌱</span>
+                        <h4>Yaşıl Çağırış</h4>
+                        <p>Həftədə bir dəfə ət yeməyi tərəvəzlə əvəz edin.</p>
+                    </div>
+                    <div class="tip-card tip-high">
+                        <span class="tip-icon">💡</span>
+                        <h4>Enerjiyə Qənaət</h4>
+                        <p>İstifadə edilməyən cihazları elektrik şəbəkəsindən ayırın.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">...</footer>
+</body>
+</html>
