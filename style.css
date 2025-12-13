@@ -135,6 +135,7 @@ body {
 }
 
 .hero-image {
+    background: url(image.png) center/cover;
     max-width: 40%;
 }
 
